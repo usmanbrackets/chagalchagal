@@ -1,0 +1,18 @@
+name: pp-dev-api
+
+on:
+  push:
+    branches: [ qa ]
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - run: whoami
+    - run: |
+        cd /home/ubuntu/dev-monitair-api/monitair-api
+        pwd
+        git pull
+    - run: sudo pm2 restart 'dev-api'
