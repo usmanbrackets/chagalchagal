@@ -1,13 +1,23 @@
 {
   "name": "eslint",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "lint:fix":"eslint --fix ./*.js"
-
+    "lint:fix": "eslint --fix ./*.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmanbrackets/chagalchagal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usmanbrackets/chagalchagal/issues"
+  },
+  "homepage": "https://github.com/usmanbrackets/chagalchagal#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
