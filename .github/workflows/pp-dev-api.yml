@@ -11,7 +11,7 @@ jobs:
     steps:
       - run: whoami
       - run: |
-          cd /home/ubuntu/
+          cd /home/ubuntu/chagalchagal
           pwd
           git pull
       - run: sudo node index.js
