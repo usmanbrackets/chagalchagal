@@ -1,18 +1,17 @@
-name: pp-dev-api
+name: usman server
 
 on:
   push:
-    branches: [ qa ]
+    branches: [master]
 
 jobs:
   build:
-
     runs-on: self-hosted
 
     steps:
-    - run: whoami
-    - run: |
-        cd /home/ubuntu/dev-monitair-api/monitair-api
-        pwd
-        git pull
-    - run: sudo pm2 restart 'dev-api'
+      - run: whoami
+      - run: |
+          cd /home/ubuntu/
+          pwd
+          git pull
+      - run: sudo node index.js
