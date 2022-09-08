@@ -12,8 +12,5 @@ jobs:
       - run: whoami
       - run: pwd
       - run: ls -la
-      - run: cd ~
-      - run: pwd
-      - run: ls
 
-      - run: echo how are you sir
+      - run: echo how are you
