@@ -12,11 +12,9 @@ jobs:
       - run: whoami
       - run: pwd
       - run: ls -la
-
       - run: echo how are you
-       - run: |
+      - run: |
           cd ~/home/ubuntu/chagalchagal
           pwd
           git pull
       - run: sudo pm2 restart 0
-
