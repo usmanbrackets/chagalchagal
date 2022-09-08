@@ -1,0 +1,19 @@
+name: pp-dev-api
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - run: whoami
+      - run: pwd
+      - run: ls -la
+      - run: cd ~
+      - run: pwd
+      - run: ls
+
+      - run: echo how are you sir
