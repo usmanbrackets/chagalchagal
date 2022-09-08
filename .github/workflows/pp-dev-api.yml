@@ -14,7 +14,7 @@ jobs:
       - run: ls -la
       - run: echo how are you
       - run: |
-          cd ~/home/ubuntu/chagalchagal
+          cd ~/chagalchagal
           pwd
           git pull
       - run: sudo pm2 restart 0
