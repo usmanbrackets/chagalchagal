@@ -6,6 +6,7 @@ module.exports = {
       env: {
         MONITAIR_APP_ENV: "mydummypath",
         NODE_PATH: ".",
+        PORT: 8000,
       },
     },
   ],

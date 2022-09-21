@@ -1,9 +1,13 @@
 const app = require("express")();
 
+console.log("process.env ", process.env);
+
 app.get("/", (req, res) => {
   return res.status(200).send("server is healthy with ci and cd");
 });
 
-app.listen(5000, () => {
-  console.log("server is running on port 5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`server is running on port ${PORT}`);
 });
